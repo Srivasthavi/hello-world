@@ -1,0 +1,110 @@
+sometimes we need a bit of help to move on
+we might just need an example to see how we can solve a problem
+so here are a few coding problems from hackkerank with solns
+FIRST-EASY-LEVEL-BEGINNERS
+--------------------------------------------------------------
+#1:https://www.hackerrank.com/challenges/welcome-to-java/problem
+
+//easy and simple
+public class Sol
+{
+    public static void main(String args[])
+    {
+        System.out.println("Hello, World.");
+        System.out.println("Hello, Java.");
+    }
+}
+----------------------------------------------------------------------
+#2:https://www.hackerrank.com/challenges/java-stdin-and-stdout-1/problem
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+      int a[]=new int[3];
+      for(int i=0;i<3;i++)
+      {
+          a[i]=scan.nextInt();
+      }
+      for(int j=0;j<3;j++)
+      {
+          System.out.println(a[j]);
+      }
+    }
+}
+--------------------------------------------------------------------------
+#3:https://www.hackerrank.com/challenges/java-if-else/problem
+
+import java.util.*;
+public class Trial
+{
+    public static void main(String args[])
+    {
+
+        Scanner obj=new Scanner(System.in);
+        int a=obj.nextInt();
+        if(a>0 && a<101)
+        {
+        if (a%2==0)
+        {
+            if(a>1 && a<6)System.out.println("Not Weird");
+            else if(a>5 && a<21)System.out.println("Weird");
+            else System.out.println("Not Weird");
+        }
+        else System.out.println("Weird");
+        }
+        else System.out.println("Not Weird");
+    }
+}
+-----------------------------------------------------------------------------
+#4:https://www.hackerrank.com/challenges/java-loops-i/problem
+
+import java.util.*;
+public class Sol
+{
+    public static void main(String args[])
+    {
+        Scanner obj=new Scanner(System.in);
+        int a=obj.nextInt();
+        if(a>1 && a<21)
+        {
+        for(int i=1;i<11;i++)
+        {
+            System.out.println(a+" x "+i+" = "+(a*i));
+        }
+        }
+    }
+}
+--------------------------------------------------------------------------------
+#5:https://www.hackerrank.com/challenges/java-loops/problem
+
+import java.util.*;
+import java.io.*;
+
+class Solution{
+    public static void main(String []argh){
+        Scanner in = new Scanner(System.in);
+        int t=in.nextInt();
+        for(int i=0;i<t;i++){
+                int result = 0;
+                int a = in.nextInt();
+                int b = in.nextInt();
+                int n = in.nextInt();
+
+                for (int j = 0; j < n; j++ ){
+                    if(j==0){
+                        result = result + (a + (int)Math.pow(2,j) * b);
+                    }
+                    else{
+                        result = result + ((int)Math.pow(2,j) * b);
+                    }
+                    System.out.print(result+" ");
+                }
+                System.out.println();
+            }
+        in.close();
+    }
+}
+--------------------------------------------------------------------------------------
